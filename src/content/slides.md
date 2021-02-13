@@ -266,6 +266,24 @@ describe("My test", () => {
 
 ---
 
+# Mock by reassigning
+
+```js
+let now = 0;
+const originalPerfNow: () => number = global.performance.now;
+
+beforeEach(() => {
+  now = 0;
+  global.performance.now = () => now;
+});
+
+afterEach(() => {
+  global.performance.now = originalPerfNow;
+});
+```
+
+---
+
 # React-specific additions
 
 - `create-react-app` sets up a ready-to-use test environment for you
@@ -275,6 +293,7 @@ describe("My test", () => {
 # More React-specific stuff
 
 ```sh
+# DOM testing for React components
 npm i enzyme enzyme-adapter-react-16
 npm i @types/enzyme @types/enzyme-adapter-react-16 -D
 
