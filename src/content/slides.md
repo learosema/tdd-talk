@@ -287,18 +287,16 @@ afterEach(() => {
 # React-specific additions
 
 - `create-react-app` sets up a ready-to-use test environment for you
+- Otherwise follow the basic setup above and add [Enzyme](https://enzymejs.github.io/enzyme/)
 
 ---
 
-# More React-specific stuff
+# Adding Enzyme
 
 ```sh
 # DOM testing for React components
 npm i enzyme enzyme-adapter-react-16
 npm i @types/enzyme @types/enzyme-adapter-react-16 -D
-
-# snapshot-testing
-npm i react-test-renderer -D
 ```
 
 ---
@@ -343,5 +341,9 @@ module.exports = {
 - [https://jestjs.io](https://jestjs.io)
 - [https://kulshekhar.github.io/ts-jest/](https://kulshekhar.github.io/ts-jest/)
 - [https://enzymejs.github.io/enzyme/](https://enzymejs.github.io/enzyme/)
--
+
+---
+
+## Recommended related talk
+
 - [Mirjam Bäuerlein @ RuhrJS 2019 - a tale of dog training and test-driven development](https://www.youtube.com/watch?v=V7QRcnnMoKI)
