@@ -1,8 +1,8 @@
-# Eleventy in Eleven Minutes
+# TDD with Jest + TypeScript
 
-## A talk for the campus lightning talks at SinnerSchrader
+## A talk about TDD and getting started with Jest+TypeScript
 
-https://terabaud.github.io/eleventy-talk/
+https://terabaud.github.io/tdd-talk/
 
 ## Running it locally
 
