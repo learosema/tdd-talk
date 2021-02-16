@@ -37,6 +37,8 @@
 - Think about your problem
 - Split your problem into smaller pieces
 - Solve your problems in the mantra of TDD
+  - first write a test
+  - dont write new code before writing a test for it
 
 ---
 
