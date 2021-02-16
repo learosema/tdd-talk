@@ -3,9 +3,11 @@
 <h1>Hi! I'm Lea Rosema</h1>
 <ul>
 <li>Pronouns: she/her</li>
-<li>Junior Frontend Developer at SinnerSchrader</li>
-<li>Digital artist, addicted to <a target="_blank" rel="noopener noreferer" href="https://codepen.io">Codepen</a></li>
+<li>Frontend Developer at SinnerSchrader, Part of Accenture Interactive</li>
+<li><a target="_blank" rel="noopener noreferer" href="https://terabaud.github.io/tdd-talk/">https://terabaud.github.io/tdd-talk/</a></li>
+<li><a target="_blank" rel="noopener noreferer" href="https://codepen.io/terabaud/">https://codepen.io/terabaud/</a></li>
 <li><a target="_blank" rel="noopener noreferer" href="https://lea.codes/">https://lea.codes/</a></li>
+<li><a target="_blank" rel="noopener noreferer" href="https://twitter.com/terabaud/">@terabaud</a></li>
 </ul>
 </section><section class="slide" id="slide_3" tabindex="-1">
 <h1>Structure of this talk</h1>
@@ -34,7 +36,7 @@
 <li>Solve your problems in the mantra of TDD
 <ul>
 <li>first write a test</li>
-<li>dont write new code before writing a test for it</li>
+<li>don't write new code before writing a test for it</li>
 </ul>
 </li>
 </ul>
@@ -55,7 +57,7 @@
 <li>Your progress becomes visible</li>
 <li>Ideal for pair/mob programming</li>
 <li>Reduces debugging time</li>
-<li>Integratable with CI/CD tools</li>
+<li>Integrateable with CI/CD tools</li>
 </ul>
 </section><section class="slide" id="slide_8" tabindex="-1">
 <h1>Kinds of tests</h1>
@@ -95,7 +97,7 @@
 <ul>
 <li>Test functionality of a component</li>
 <li>Similar to unit tests as you test components outside the context of your app</li>
-<li>Ie. test if specific classNames apply when enabling component attributes</li>
+<li>e.g. test if specific classNames apply when enabling component attributes</li>
 <li>Works great with <a target="_blank" rel="noopener noreferer" href="https://storybook.js.org/docs/react/workflows/unit-testing">Storybook</a></li>
 </ul>
 </section><section class="slide" id="slide_13" tabindex="-1">
@@ -110,7 +112,7 @@
 <li>Test the complete functionality of your app</li>
 <li>Puppeteer - uses a headless chromium</li>
 <li>Cypress - popular &amp; developer friendly</li>
-<li>Selenium - uses standardized WebDriver protocol (also works with IE)</li>
+<li>Selenium - uses standardized WebDriver protocol (works with IE)</li>
 <li>Appium (like Selenium but for mobile browsers)</li>
 </ul>
 </section><section class="slide" id="slide_15" tabindex="-1">
@@ -133,7 +135,6 @@
 </section><section class="slide" id="slide_16" tabindex="-1">
 <h1>Getting Started</h1>
 <pre><code class="language-sh">mkdir my-project
-git init
 npm init -y
 npm i typescript jest @types/jest ts-jest -D
 npx typescript --init
@@ -248,18 +249,6 @@ afterEach(() =&gt; {
 });
 </code></pre>
 </section><section class="slide" id="slide_28" tabindex="-1">
-<h1>React-specific additions</h1>
-<ul>
-<li><code>create-react-app</code> sets up a ready-to-use test environment for you</li>
-<li>Otherwise follow the basic setup above and add <a target="_blank" rel="noopener noreferer" href="https://enzymejs.github.io/enzyme/">Enzyme</a></li>
-</ul>
-</section><section class="slide" id="slide_29" tabindex="-1">
-<h1>Adding Enzyme</h1>
-<pre><code class="language-sh"># DOM testing for React components
-npm i enzyme enzyme-adapter-react-16
-npm i @types/enzyme @types/enzyme-adapter-react-16 -D
-</code></pre>
-</section><section class="slide" id="slide_30" tabindex="-1">
 <h1>Asset imports 1/2</h1>
 <h2><code>./jest/stub-transformer.js</code></h2>
 <pre><code class="language-js">module.exports = {
@@ -267,7 +256,7 @@ npm i @types/enzyme @types/enzyme-adapter-react-16 -D
   getCacheKey: () =&gt; &quot;stub-transformer&quot;,
 };
 </code></pre>
-</section><section class="slide" id="slide_31" tabindex="-1">
+</section><section class="slide" id="slide_29" tabindex="-1">
 <h1>Asset imports 2/2</h1>
 <h2><code>jest.config.js</code></h2>
 <pre><code class="language-js">module.exports = {
@@ -276,7 +265,7 @@ npm i @types/enzyme @types/enzyme-adapter-react-16 -D
   },
 };
 </code></pre>
-</section><section class="slide" id="slide_32" tabindex="-1">
+</section><section class="slide" id="slide_30" tabindex="-1">
 <h1>Real life code example</h1>
 <ul>
 <li><a target="_blank" rel="noopener noreferer" href="https://github.com/shader-art/shader-art/">https://github.com/shader-art/shader-art/</a></li>
@@ -284,16 +273,20 @@ npm i @types/enzyme @types/enzyme-adapter-react-16 -D
 <li><a target="_blank" rel="noopener noreferer" href="https://github.com/ella-math/">https://github.com/terabaud/ella-math/</a></li>
 <li><a target="_blank" rel="noopener noreferer" href="https://github.com/talentbook/">https://github.com/talentbook/</a></li>
 </ul>
-</section><section class="slide" id="slide_33" tabindex="-1">
+</section><section class="slide" id="slide_31" tabindex="-1">
 <h1>Thank you :)</h1>
-<h2>Resources</h2>
+</section><section class="slide" id="slide_32" tabindex="-1">
+<h1>Link to my slides</h1>
+<ul>
+<li><a target="_blank" rel="noopener noreferer" href="https://terabaud.github.io/tdd-talk/">https://terabaud.github.io/tdd-talk/</a></li>
+</ul>
+<h2>Further Resources</h2>
 <ul>
 <li><a target="_blank" rel="noopener noreferer" href="https://jestjs.io">https://jestjs.io</a></li>
 <li><a target="_blank" rel="noopener noreferer" href="https://kulshekhar.github.io/ts-jest/">https://kulshekhar.github.io/ts-jest/</a></li>
 <li><a target="_blank" rel="noopener noreferer" href="https://enzymejs.github.io/enzyme/">https://enzymejs.github.io/enzyme/</a></li>
 </ul>
-</section><section class="slide" id="slide_34" tabindex="-1">
-<h2>Recommended related talk</h2>
+<h2>Recommended Talk</h2>
 <ul>
 <li><a target="_blank" rel="noopener noreferer" href="https://www.youtube.com/watch?v=V7QRcnnMoKI">Mirjam Bäuerlein @ RuhrJS 2019 - a tale of dog training and test-driven development</a></li>
 </ul>
