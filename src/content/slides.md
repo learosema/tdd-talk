@@ -13,12 +13,12 @@
 
 # Structure of this talk
 
-- Introduction to TDD (7m)
-- Kinds of tests (7m)
-- Jest+TypeScript Basic Setup (7m)
-- What are mocks and how to do them in jest (7m)
-- Some tipps and tricks (7)
-- Go through real life code examples (7m)
+- Introduction to TDD
+- Kinds of tests
+- Jest+TypeScript Basic Setup
+- What are mocks and how to do them in jest
+- Some tipps and tricks
+- Go through real life code examples
 - Q&A
 
 ---
@@ -82,7 +82,9 @@
 
 # Integration tests
 
-- test how a group of single units work together
+- test "integration" of units
+- checking the connection and correctness of data flow between two or more units
+- how does a group of units work together?
 
 ---
 
@@ -177,7 +179,7 @@ module.exports = {
 
 # Example
 
-```js
+```ts
 describe("distance unit tests", () => {
   it("should return the distance between 2 points", () => {
     const b = { x: 1, y: 1 };
@@ -191,8 +193,8 @@ describe("distance unit tests", () => {
 
 # Example implementation
 
-```js
-type Point = { x: number, y: number };
+```ts
+type Point = { x: number; y: number };
 
 export function distance(a: Point, b: Point) {
   const { abs, hypot } = Math;
@@ -331,6 +333,9 @@ module.exports = {
 # Real life code example
 
 - [https://github.com/shader-art/shader-art/](https://github.com/shader-art/shader-art/)
+- [https://github.com/terabaud/frontm8er](https://github.com/terabaud/frontm8er)
+- [https://github.com/terabaud/ella-math/](https://github.com/ella-math/)
+- [https://github.com/talentbook/](https://github.com/talentbook/)
 
 ---
 

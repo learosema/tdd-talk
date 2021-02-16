@@ -1,6 +1,10 @@
-@import 'config/reset';
-@import 'config/variables';
-@import 'config/typography';
-@import 'config/global';
+@import "vendor/prism";
+@import "vendor/prism-dark";
 
-@import 'components/slide';
+@import "config/reset";
+@import "config/variables";
+@import "config/typography";
+@import "config/global";
+@import "config/themes";
+
+@import "components/slide";
