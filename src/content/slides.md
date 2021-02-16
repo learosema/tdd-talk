@@ -5,9 +5,11 @@
 # Hi! I'm Lea Rosema
 
 - Pronouns: she/her
-- Junior Frontend Developer at SinnerSchrader
-- Digital artist, addicted to [Codepen](https://codepen.io)
+- Frontend Developer at SinnerSchrader, Part of Accenture Interactive
+- [https://terabaud.github.io/tdd-talk/](https://terabaud.github.io/tdd-talk/)
+- [https://codepen.io/terabaud/](https://codepen.io/terabaud/)
 - [https://lea.codes/](https://lea.codes/)
+- [@terabaud](https://twitter.com/terabaud/)
 
 ---
 
@@ -38,7 +40,7 @@
 - Split your problem into smaller pieces
 - Solve your problems in the mantra of TDD
   - first write a test
-  - dont write new code before writing a test for it
+  - don't write new code before writing a test for it
 
 ---
 
@@ -59,7 +61,7 @@
 - Your progress becomes visible
 - Ideal for pair/mob programming
 - Reduces debugging time
-- Integratable with CI/CD tools
+- Integrateable with CI/CD tools
 
 ---
 
@@ -104,7 +106,7 @@
 
 - Test functionality of a component
 - Similar to unit tests as you test components outside the context of your app
-- Ie. test if specific classNames apply when enabling component attributes
+- e.g. test if specific classNames apply when enabling component attributes
 - Works great with [Storybook](https://storybook.js.org/docs/react/workflows/unit-testing)
 
 ---
@@ -121,7 +123,7 @@
 - Test the complete functionality of your app
 - Puppeteer - uses a headless chromium
 - Cypress - popular & developer friendly
-- Selenium - uses standardized WebDriver protocol (also works with IE)
+- Selenium - uses standardized WebDriver protocol (works with IE)
 - Appium (like Selenium but for mobile browsers)
 
 ---
@@ -142,7 +144,6 @@
 
 ```sh
 mkdir my-project
-git init
 npm init -y
 npm i typescript jest @types/jest ts-jest -D
 npx typescript --init
@@ -288,23 +289,6 @@ afterEach(() => {
 
 ---
 
-# React-specific additions
-
-- `create-react-app` sets up a ready-to-use test environment for you
-- Otherwise follow the basic setup above and add [Enzyme](https://enzymejs.github.io/enzyme/)
-
----
-
-# Adding Enzyme
-
-```sh
-# DOM testing for React components
-npm i enzyme enzyme-adapter-react-16
-npm i @types/enzyme @types/enzyme-adapter-react-16 -D
-```
-
----
-
 # Asset imports 1/2
 
 ## `./jest/stub-transformer.js`
@@ -343,14 +327,18 @@ module.exports = {
 
 # Thank you :)
 
-## Resources
+---
+
+# Link to my slides
+
+- [https://terabaud.github.io/tdd-talk/](https://terabaud.github.io/tdd-talk/)
+
+## Further Resources
 
 - [https://jestjs.io](https://jestjs.io)
 - [https://kulshekhar.github.io/ts-jest/](https://kulshekhar.github.io/ts-jest/)
 - [https://enzymejs.github.io/enzyme/](https://enzymejs.github.io/enzyme/)
 
----
-
-## Recommended related talk
+## Recommended Talk
 
 - [Mirjam Bäuerlein @ RuhrJS 2019 - a tale of dog training and test-driven development](https://www.youtube.com/watch?v=V7QRcnnMoKI)
