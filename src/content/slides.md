@@ -44,7 +44,7 @@
 
 ---
 
-# TDD Mantra in detail
+# A TDD Cycle
 
 - Write a test for one small piece
 - The test fails
@@ -79,7 +79,6 @@
 # Unit tests
 
 - test single functions in an isolated way
-- external dependencies are out of scope and are abstracted away
 - database queries, API fetches are replaced (mocked) by fixed results
 
 ---
@@ -87,7 +86,6 @@
 # Integration tests
 
 - test "integration" of units
-- checking the connection and correctness of data flow between two or more units
 - how does a group of units work together?
 
 ---
@@ -95,7 +93,7 @@
 # Snapshot tests
 
 - check if the markup of a component renders correctly
-- can be useful for small pieces
+- can be useful for testing small pieces of markup
 - not recommended for very complex components
 - [in-depth guide](https://jestjs.io/docs/en/snapshot-testing)
 
@@ -104,8 +102,6 @@
 # Component tests
 
 - Test functionality of a component
-- Similar to unit tests as you test components outside the context of your app
-- e.g. test if specific classNames apply when enabling component attributes
 - Works great with [Storybook](https://storybook.js.org/docs/react/workflows/unit-testing)
 
 ---
