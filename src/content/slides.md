@@ -97,7 +97,6 @@
 - check if the markup of a component renders correctly
 - can be useful for small pieces
 - not recommended for very complex components
-- better: component tests/visual tests
 - [in-depth guide](https://jestjs.io/docs/en/snapshot-testing)
 
 ---
