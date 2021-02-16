@@ -41,7 +41,7 @@
 </li>
 </ul>
 </section><section class="slide" id="slide_6" tabindex="-1">
-<h1>TDD Mantra in detail</h1>
+<h1>A TDD Cycle</h1>
 <ul>
 <li>Write a test for one small piece</li>
 <li>The test fails</li>
@@ -73,31 +73,26 @@
 <h1>Unit tests</h1>
 <ul>
 <li>test single functions in an isolated way</li>
-<li>external dependencies are out of scope and are abstracted away</li>
 <li>database queries, API fetches are replaced (mocked) by fixed results</li>
 </ul>
 </section><section class="slide" id="slide_10" tabindex="-1">
 <h1>Integration tests</h1>
 <ul>
 <li>test &quot;integration&quot; of units</li>
-<li>checking the connection and correctness of data flow between two or more units</li>
 <li>how does a group of units work together?</li>
 </ul>
 </section><section class="slide" id="slide_11" tabindex="-1">
 <h1>Snapshot tests</h1>
 <ul>
 <li>check if the markup of a component renders correctly</li>
-<li>can be useful for small pieces</li>
+<li>can be useful for testing small pieces of markup</li>
 <li>not recommended for very complex components</li>
-<li>better: component tests/visual tests</li>
 <li><a target="_blank" rel="noopener noreferer" href="https://jestjs.io/docs/en/snapshot-testing">in-depth guide</a></li>
 </ul>
 </section><section class="slide" id="slide_12" tabindex="-1">
 <h1>Component tests</h1>
 <ul>
 <li>Test functionality of a component</li>
-<li>Similar to unit tests as you test components outside the context of your app</li>
-<li>e.g. test if specific classNames apply when enabling component attributes</li>
 <li>Works great with <a target="_blank" rel="noopener noreferer" href="https://storybook.js.org/docs/react/workflows/unit-testing">Storybook</a></li>
 </ul>
 </section><section class="slide" id="slide_13" tabindex="-1">
