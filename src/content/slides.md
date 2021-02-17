@@ -121,10 +121,9 @@
 # End-to-end tests
 
 - Test the complete functionality of your app
-- Puppeteer - uses a headless chromium
-- Cypress - popular & developer friendly
-- Selenium - uses standardized WebDriver protocol (works with IE)
-- Appium (like Selenium but for mobile browsers)
+- [Puppeteer](https://pptr.dev/) - uses a headless chromium
+- [Cypress](https://www.cypress.io/) - popular & developer friendly
+- [Selenium](https://www.selenium.dev/) - uses standardized WebDriver protocol (works with IE)
 
 ---
 
