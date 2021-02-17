@@ -4,23 +4,27 @@
 <ul>
 <li>Pronouns: she/her</li>
 <li>Frontend Developer at SinnerSchrader, Part of Accenture Interactive</li>
-<li><a target="_blank" rel="noopener noreferer" href="https://terabaud.github.io/tdd-talk/">https://terabaud.github.io/tdd-talk/</a></li>
 <li><a target="_blank" rel="noopener noreferer" href="https://codepen.io/terabaud/">https://codepen.io/terabaud/</a></li>
 <li><a target="_blank" rel="noopener noreferer" href="https://lea.codes/">https://lea.codes/</a></li>
 <li><a target="_blank" rel="noopener noreferer" href="https://twitter.com/terabaud/">@terabaud</a></li>
 </ul>
 </section><section class="slide" id="slide_3" tabindex="-1">
+<h1>Link to Slides and Code</h1>
+<ul>
+<li><a target="_blank" rel="noopener noreferer" href="https://terabaud.github.io/tdd-talk/">https://terabaud.github.io/tdd-talk/</a></li>
+<li><a target="_blank" rel="noopener noreferer" href="https://github.com/terabaud/tdd-code/">https://github.com/terabaud/tdd-code/</a></li>
+</ul>
+</section><section class="slide" id="slide_4" tabindex="-1">
 <h1>Structure of this talk</h1>
 <ul>
 <li>Introduction to TDD</li>
 <li>Kinds of tests</li>
 <li>Jest+TypeScript Basic Setup</li>
 <li>What are mocks and how to do them in jest</li>
-<li>Some tipps and tricks</li>
 <li>Go through real life code examples</li>
 <li>Q&amp;A</li>
 </ul>
-</section><section class="slide" id="slide_4" tabindex="-1">
+</section><section class="slide" id="slide_5" tabindex="-1">
 <h1>Introduction to TDD</h1>
 <ul>
 <li>TDD stands for Test Driven Development</li>
@@ -28,7 +32,7 @@
 <li>Kent Back first wrote about it in 2003</li>
 <li>Most important concept: tests first approach</li>
 </ul>
-</section><section class="slide" id="slide_5" tabindex="-1">
+</section><section class="slide" id="slide_6" tabindex="-1">
 <h1>Tests first approach?</h1>
 <ul>
 <li>Think about your problem</li>
@@ -40,7 +44,7 @@
 </ul>
 </li>
 </ul>
-</section><section class="slide" id="slide_6" tabindex="-1">
+</section><section class="slide" id="slide_7" tabindex="-1">
 <h1>A TDD Cycle</h1>
 <ul>
 <li>Write a test for one small piece</li>
@@ -50,7 +54,7 @@
 <li>Clean code, refactor if necessary</li>
 <li>Repeat</li>
 </ul>
-</section><section class="slide" id="slide_7" tabindex="-1">
+</section><section class="slide" id="slide_8" tabindex="-1">
 <h1>Advantages of TDD</h1>
 <ul>
 <li>Rewarding :)</li>
@@ -59,7 +63,7 @@
 <li>Reduces debugging time</li>
 <li>Integrateable with CI/CD tools</li>
 </ul>
-</section><section class="slide" id="slide_8" tabindex="-1">
+</section><section class="slide" id="slide_9" tabindex="-1">
 <h1>Kinds of tests</h1>
 <ul>
 <li>Unit tests</li>
@@ -69,19 +73,19 @@
 <li>Visual tests</li>
 <li>End 2 end tests</li>
 </ul>
-</section><section class="slide" id="slide_9" tabindex="-1">
+</section><section class="slide" id="slide_10" tabindex="-1">
 <h1>Unit tests</h1>
 <ul>
 <li>test single functions in an isolated way</li>
 <li>database queries, API fetches are replaced (mocked) by fixed results</li>
 </ul>
-</section><section class="slide" id="slide_10" tabindex="-1">
+</section><section class="slide" id="slide_11" tabindex="-1">
 <h1>Integration tests</h1>
 <ul>
 <li>test &quot;integration&quot; of units</li>
 <li>how does a group of units work together?</li>
 </ul>
-</section><section class="slide" id="slide_11" tabindex="-1">
+</section><section class="slide" id="slide_12" tabindex="-1">
 <h1>Snapshot tests</h1>
 <ul>
 <li>check if the markup of a component renders correctly</li>
@@ -89,28 +93,27 @@
 <li>not recommended for very complex components</li>
 <li><a target="_blank" rel="noopener noreferer" href="https://jestjs.io/docs/en/snapshot-testing">in-depth guide</a></li>
 </ul>
-</section><section class="slide" id="slide_12" tabindex="-1">
+</section><section class="slide" id="slide_13" tabindex="-1">
 <h1>Component tests</h1>
 <ul>
 <li>Test functionality of a component</li>
 <li>Works great with <a target="_blank" rel="noopener noreferer" href="https://storybook.js.org/docs/react/workflows/unit-testing">Storybook</a></li>
 </ul>
-</section><section class="slide" id="slide_13" tabindex="-1">
+</section><section class="slide" id="slide_14" tabindex="-1">
 <h1>Visual tests</h1>
 <ul>
 <li>test if your component matches a screenshot</li>
 <li>Works great with <a target="_blank" rel="noopener noreferer" href="https://storybook.js.org/docs/react/workflows/visual-testing">Storybook</a></li>
 </ul>
-</section><section class="slide" id="slide_14" tabindex="-1">
+</section><section class="slide" id="slide_15" tabindex="-1">
 <h1>End-to-end tests</h1>
 <ul>
 <li>Test the complete functionality of your app</li>
-<li>Puppeteer - uses a headless chromium</li>
-<li>Cypress - popular &amp; developer friendly</li>
-<li>Selenium - uses standardized WebDriver protocol (works with IE)</li>
-<li>Appium (like Selenium but for mobile browsers)</li>
+<li><a target="_blank" rel="noopener noreferer" href="https://pptr.dev/">Puppeteer</a> - uses a headless chromium</li>
+<li><a target="_blank" rel="noopener noreferer" href="https://www.cypress.io/">Cypress</a> - popular &amp; developer friendly</li>
+<li><a target="_blank" rel="noopener noreferer" href="https://www.selenium.dev/">Selenium</a> - uses standardized WebDriver protocol (works with IE)</li>
 </ul>
-</section><section class="slide" id="slide_15" tabindex="-1">
+</section><section class="slide" id="slide_16" tabindex="-1">
 <h1>Project setup with jest and TypeScript</h1>
 <ul>
 <li>via Babel
@@ -127,7 +130,7 @@
 </ul>
 </li>
 </ul>
-</section><section class="slide" id="slide_16" tabindex="-1">
+</section><section class="slide" id="slide_17" tabindex="-1">
 <h1>Getting Started</h1>
 <pre><code class="language-sh">mkdir my-project
 npm init -y
@@ -135,20 +138,20 @@ npm i typescript jest @types/jest ts-jest -D
 npx typescript --init
 npx ts-jest config:init
 </code></pre>
-</section><section class="slide" id="slide_17" tabindex="-1">
+</section><section class="slide" id="slide_18" tabindex="-1">
 <h1><code>jest.config.js</code></h1>
 <pre><code class="language-js">module.exports = {
   preset: &quot;ts-jest&quot;,
   testEnvironment: &quot;node&quot;,
 };
 </code></pre>
-</section><section class="slide" id="slide_18" tabindex="-1">
+</section><section class="slide" id="slide_19" tabindex="-1">
 <h1>Test environments</h1>
 <ul>
 <li><code>node</code> - node-like environment</li>
 <li><code>jsdom</code> - browser environment</li>
 </ul>
-</section><section class="slide" id="slide_19" tabindex="-1">
+</section><section class="slide" id="slide_20" tabindex="-1">
 <h1>Layout of a test</h1>
 <ul>
 <li><code>describe</code>
@@ -163,7 +166,7 @@ npx ts-jest config:init
 </ul>
 </li>
 </ul>
-</section><section class="slide" id="slide_20" tabindex="-1">
+</section><section class="slide" id="slide_21" tabindex="-1">
 <h1>Example</h1>
 <pre><code class="language-ts">describe(&quot;distance unit tests&quot;, () =&gt; {
   it(&quot;should return the distance between 2 points&quot;, () =&gt; {
@@ -173,7 +176,7 @@ npx ts-jest config:init
   });
 });
 </code></pre>
-</section><section class="slide" id="slide_21" tabindex="-1">
+</section><section class="slide" id="slide_22" tabindex="-1">
 <h1>Example implementation</h1>
 <pre><code class="language-ts">type Point = { x: number; y: number };
 
@@ -182,20 +185,25 @@ export function distance(a: Point, b: Point) {
   return hypot(abs(a.x - b.x, a.y - b.y));
 }
 </code></pre>
-</section><section class="slide" id="slide_22" tabindex="-1">
+</section><section class="slide" id="slide_23" tabindex="-1">
+<h1>A basic project setup</h1>
+<ul>
+<li><a target="_blank" rel="noopener noreferer" href="https://github.com/terabaud/tdd-code/">https://github.com/terabaud/tdd-code/</a></li>
+</ul>
+</section><section class="slide" id="slide_24" tabindex="-1">
 <h1>Mocks</h1>
 <ul>
 <li>make functions out of test scope return expected results</li>
 <li>abstract away dependencies for your isolated tests</li>
 <li>Example for mocks: network calls, database queries, user input events</li>
 </ul>
-</section><section class="slide" id="slide_23" tabindex="-1">
+</section><section class="slide" id="slide_25" tabindex="-1">
 <h1>How to mock in jest</h1>
 <ul>
 <li>import a mock from npm</li>
 <li>overwrite a function with a mock implementation</li>
 </ul>
-</section><section class="slide" id="slide_24" tabindex="-1">
+</section><section class="slide" id="slide_26" tabindex="-1">
 <h1>Example</h1>
 <h2>canvas 2d/webgl mock</h2>
 <pre><code class="language-sh">npm i jest-webgl-canvas-mock -D
@@ -206,7 +214,7 @@ export function distance(a: Point, b: Point) {
   setupFiles: [&quot;jest-webgl-canvas-mock&quot;],
 };
 </code></pre>
-</section><section class="slide" id="slide_25" tabindex="-1">
+</section><section class="slide" id="slide_27" tabindex="-1">
 <h1>Example: jest.mock 1/2</h1>
 <pre><code class="language-js">import fetch from &quot;node-fetch&quot;;
 import { mocked } from &quot;ts-jest/utils&quot;;
@@ -215,7 +223,7 @@ import { getPerson } from &quot;./star-wars-api&quot;;
 
 jest.mock(&quot;node-fetch&quot;, () =&gt; jest.fn());
 </code></pre>
-</section><section class="slide" id="slide_26" tabindex="-1">
+</section><section class="slide" id="slide_28" tabindex="-1">
 <h1>Example: jest.mock 2/2</h1>
 <pre><code class="language-js">describe(&quot;My test&quot;, () =&gt; {
   it(&quot;should fetch Luke Skywalker from the Star Wars API&quot;, async () =&gt; {
@@ -229,7 +237,7 @@ jest.mock(&quot;node-fetch&quot;, () =&gt; jest.fn());
   });
 });
 </code></pre>
-</section><section class="slide" id="slide_27" tabindex="-1">
+</section><section class="slide" id="slide_29" tabindex="-1">
 <h1>Mock by reassigning</h1>
 <pre><code class="language-js">let now = 0;
 const originalPerfNow: () =&gt; number = global.performance.now;
@@ -243,7 +251,7 @@ afterEach(() =&gt; {
   global.performance.now = originalPerfNow;
 });
 </code></pre>
-</section><section class="slide" id="slide_28" tabindex="-1">
+</section><section class="slide" id="slide_30" tabindex="-1">
 <h1>Asset imports 1/2</h1>
 <h2><code>./jest/stub-transformer.js</code></h2>
 <pre><code class="language-js">module.exports = {
@@ -251,7 +259,7 @@ afterEach(() =&gt; {
   getCacheKey: () =&gt; &quot;stub-transformer&quot;,
 };
 </code></pre>
-</section><section class="slide" id="slide_29" tabindex="-1">
+</section><section class="slide" id="slide_31" tabindex="-1">
 <h1>Asset imports 2/2</h1>
 <h2><code>jest.config.js</code></h2>
 <pre><code class="language-js">module.exports = {
@@ -260,17 +268,17 @@ afterEach(() =&gt; {
   },
 };
 </code></pre>
-</section><section class="slide" id="slide_30" tabindex="-1">
-<h1>Real life code example</h1>
+</section><section class="slide" id="slide_32" tabindex="-1">
+<h1>Real life code examples</h1>
 <ul>
 <li><a target="_blank" rel="noopener noreferer" href="https://github.com/shader-art/shader-art/">https://github.com/shader-art/shader-art/</a></li>
 <li><a target="_blank" rel="noopener noreferer" href="https://github.com/terabaud/frontm8er">https://github.com/terabaud/frontm8er</a></li>
 <li><a target="_blank" rel="noopener noreferer" href="https://github.com/ella-math/">https://github.com/terabaud/ella-math/</a></li>
-<li><a target="_blank" rel="noopener noreferer" href="https://github.com/talentbook/">https://github.com/talentbook/</a></li>
+<li><a target="_blank" rel="noopener noreferer" href="https://github.com/terabaud/talentbook/">https://github.com/terabaud/talentbook/</a></li>
 </ul>
-</section><section class="slide" id="slide_31" tabindex="-1">
+</section><section class="slide" id="slide_33" tabindex="-1">
 <h1>Thank you :)</h1>
-</section><section class="slide" id="slide_32" tabindex="-1">
+</section><section class="slide" id="slide_34" tabindex="-1">
 <h1>Link to my slides</h1>
 <ul>
 <li><a target="_blank" rel="noopener noreferer" href="https://terabaud.github.io/tdd-talk/">https://terabaud.github.io/tdd-talk/</a></li>
