@@ -6,10 +6,16 @@
 
 - Pronouns: she/her
 - Frontend Developer at SinnerSchrader, Part of Accenture Interactive
-- [https://terabaud.github.io/tdd-talk/](https://terabaud.github.io/tdd-talk/)
 - [https://codepen.io/terabaud/](https://codepen.io/terabaud/)
 - [https://lea.codes/](https://lea.codes/)
 - [@terabaud](https://twitter.com/terabaud/)
+
+---
+
+# Link to Slides and Code
+
+- [https://terabaud.github.io/tdd-talk/](https://terabaud.github.io/tdd-talk/)
+- [https://github.com/terabaud/tdd-code/](https://github.com/terabaud/tdd-code/)
 
 ---
 
@@ -19,7 +25,6 @@
 - Kinds of tests
 - Jest+TypeScript Basic Setup
 - What are mocks and how to do them in jest
-- Some tipps and tricks
 - Go through real life code examples
 - Q&A
 
@@ -202,6 +207,12 @@ export function distance(a: Point, b: Point) {
 
 ---
 
+# A basic project setup
+
+- [https://github.com/terabaud/tdd-code/](https://github.com/terabaud/tdd-code/)
+
+---
+
 # Mocks
 
 - make functions out of test scope return expected results
@@ -311,12 +322,12 @@ module.exports = {
 
 ---
 
-# Real life code example
+# Real life code examples
 
 - [https://github.com/shader-art/shader-art/](https://github.com/shader-art/shader-art/)
 - [https://github.com/terabaud/frontm8er](https://github.com/terabaud/frontm8er)
 - [https://github.com/terabaud/ella-math/](https://github.com/ella-math/)
-- [https://github.com/talentbook/](https://github.com/talentbook/)
+- [https://github.com/terabaud/talentbook/](https://github.com/terabaud/talentbook/)
 
 ---
 
